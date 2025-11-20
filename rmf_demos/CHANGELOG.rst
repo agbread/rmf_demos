@@ -2,56 +2,7 @@
 Changelog for package rmf_demos
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.8.0 (2025-07-21)
-------------------
-* Add mutex group supervisor to common launch file (`#310 <https://github.com/open-rmf/rmf_demos/issues/310>`_)
-  Co-authored-by: yadunund <yadunund@intrinsic.ai>
-* Contributors: Grey
-
-2.7.0 (2025-06-09)
-------------------
-
-2.6.0 (2025-05-09)
-------------------
-* Dynamic events CLI scripts (`#296 <https://github.com/open-rmf/rmf_demos/issues/296>`_)
-  Co-authored-by: tanjunkiat <tanjunkiat@outlook.sg>
-* Add missing dep for rmf_reservation_node (`#297 <https://github.com/open-rmf/rmf_demos/issues/297>`_)
-* Contributors: Aaron Chong, Grey
-
-2.5.0 (2024-11-27)
-------------------
-* Provide example for robot-specific finishing request (`#255 <https://github.com/open-rmf/rmf_demos/issues/255>`_)
-* Add proto-reservation node as core part of RMF (`#212 <https://github.com/open-rmf/rmf_demos/issues/212>`_)
-* Contributors: Arjo Chakravarty, Xiyu
-
-2.4.0 (2024-06-12)
-------------------
-
-2.3.0 (2024-06-12)
-------------------
-* Remove rmf_demos_panel (`#235 <https://github.com/open-rmf/rmf_demos/pull/235>`_)
-* Use same empty string default value as fleet adapter launches (`#237 <https://github.com/open-rmf/rmf_demos/pull/237>`_)
-* Adding server_uri for dispatcher node (`#230 <https://github.com/open-rmf/rmf_demos/pull/230>`_)
-* Add task reassignment trigger in update loop (`#228 <https://github.com/open-rmf/rmf_demos/pull/228>`_)
-* Use unique hex strings for new task IDs (`#205 <https://github.com/open-rmf/rmf_demos/pull/205>`_)
-* Fix airport terminal demo (`#204 <https://github.com/open-rmf/rmf_demos/pull/204>`_)
-* Contributors: Aaron Chong, Luca Della Vedova, Xiyu, Yadunund
-
-2.2.3 (2023-12-20)
-------------------
-
-2.2.2 (2023-08-28)
-------------------
-* EasyFullControl integration with rmf_demos (`#158 <https://github.com/open-rmf/rmf_demos/pull/158>`_)
-* Contributors: Aaron Chong, Grey, Xiyu, Yadunund
-
-2.2.1 (2023-08-10)
-------------------
-
-2.2.0 (2023-06-08)
-------------------
-
-2.1.0 (2023-06-06)
+2.0.3 (2023-06-05)
 ------------------
 * Switch to rst changelogs (`#182 <https://github.com/open-rmf/rmf_demos/pull/182>`_)
 * Version updates from latest release synced to main (`#167 <https://github.com/open-rmf/rmf_demos/pull/167>`_)

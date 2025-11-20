@@ -2,54 +2,7 @@
 Changelog for package rmf_demos_maps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.8.0 (2025-07-21)
-------------------
-* Use builtin gazebo model downloading (`#307 <https://github.com/open-rmf/rmf_demos/issues/307>`_)
-* Contributors: Luca Della Vedova
-
-2.7.0 (2025-06-09)
-------------------
-
-2.6.0 (2025-05-09)
-------------------
-* Change robot types to include a namespace (`#272 <https://github.com/open-rmf/rmf_demos/issues/272>`_)
-* Contributors: Luca Della Vedova
-
-2.5.0 (2024-11-27)
-------------------
-* Add proto-reservation node as core part of RMF (`#212 <https://github.com/open-rmf/rmf_demos/issues/212>`_)
-* Remove nav graph for fleet manager and update Office world (`#263 <https://github.com/open-rmf/rmf_demos/issues/263>`_)
-* Contributors: Arjo Chakravarty, Xiyu
-
-2.4.0 (2024-06-12)
-------------------
-
-2.3.0 (2024-06-12)
-------------------
-* Port to harmonic (`#206 <https://github.com/open-rmf/rmf_demos/pull/206>`_)
-* Add a script for opening and closing lanes (`#216 <https://github.com/open-rmf/rmf_demos/pull/216>`_)
-* Fix office dispenser height to be on top of furniture (`#218 <https://github.com/open-rmf/rmf_demos/pull/218>`_)
-* Remove a few assets from the office world (`#209 <https://github.com/open-rmf/rmf_demos/pull/209>`_)
-* Update Office visuals and add aligned laser scan layer (`#202 <https://github.com/open-rmf/rmf_demos/pull/202>`_)
-* Contributors: Grey, Luca Della Vedova, Yadunund
-
-2.2.3 (2023-12-20)
-------------------
-
-2.2.2 (2023-08-28)
-------------------
-* EasyFullControl integration with rmf_demos (`#158 <https://github.com/open-rmf/rmf_demos/pull/158>`_)
-* Contributors: Aaron Chong, Grey, Xiyu, Yadunund
-
-2.2.1 (2023-08-10)
-------------------
-* Fix gz classic model download (`#185 <https://github.com/open-rmf/rmf_demos/pull/185>`_)
-* Contributors: Aaron Chong
-
-2.2.0 (2023-06-08)
-------------------
-
-2.1.0 (2023-06-06)
+2.0.3 (2023-06-05)
 ------------------
 * Switch to rst changelogs (`#182 <https://github.com/open-rmf/rmf_demos/pull/182>`_)
 * Version updates from latest release synced to main (`#167 <https://github.com/open-rmf/rmf_demos/pull/167>`_)

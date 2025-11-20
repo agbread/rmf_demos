@@ -1,0 +1,394 @@
+<?xml version="1.0"?>
+
+<sdf version='1.6'>
+  <model name='Go2W'>
+      <plugin name="slotcar" filename="libslotcar.so">
+
+      <nominal_drive_speed>2.0</nominal_drive_speed>          
+      <nominal_drive_acceleration>1.0</nominal_drive_acceleration>  
+      <max_drive_acceleration>2.0</max_drive_acceleration>        
+
+      <nominal_turn_speed>1.5</nominal_turn_speed>                 
+      <nominal_turn_acceleration>3.0</nominal_turn_acceleration>   
+      <max_turn_acceleration>4.0</max_turn_acceleration>       
+
+      <tire_radius>0.089</tire_radius>        
+      <base_width>0.43</base_width>      
+
+      <stop_distance>0.75</stop_distance>
+      <stop_radius>0.75</stop_radius>
+
+      <reversible>true</reversible>
+
+      <nominal_voltage>33.6</nominal_voltage>     
+      <nominal_capacity>15.0</nominal_capacity>   
+      <charging_current>9.0</charging_current>   
+
+      <mass>19.523</mass>                
+      <inertia>0.25</inertia>                
+      <friction_coefficient>0.22</friction_coefficient>  
+
+      <nominal_power>250.0</nominal_power> 
+
+    </plugin>
+
+    <link name='base_link'>
+      <inertial>
+        <pose>0.021547 0 0.0 0 -0 0</pose>
+        <mass>6.943</mass>
+        <inertia>
+          <ixx>0.026067</ixx>
+          <ixy>0.00012166</ixy>
+          <ixz>0.00104618</ixz>
+          <iyy>0.100115</iyy>
+          <iyz>-3.12e-05</iyz>
+          <izz>0.108576</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_fixed_joint_lump__trunk_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.3762 0.0935 0.114</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>1e+06</kp>
+              <kd>1</kd>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.2</mu>
+              <mu2>0.2</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__Head_upper_collision_1'>
+        <pose>0.285 0 0.01 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.09</length>
+            <radius>0.06</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__Head_lower_collision_2'>
+        <pose>0.293 0 -0.06 0 -0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.06</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__vlp16_base_link_collision_3'>
+        <pose>0.14543 0 0.17513 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.0717</length>
+            <radius>0.0516</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__vlp16_collision_4'>
+        <pose>0.14543 0 0.17698 0 -0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0</radius>
+          </sphere>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.001 0.001 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Green</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__trunk_visual_1'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://Go2W/meshes/base.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__vlp16_link_visual_2'>
+        <pose>0.14543 0 0.13928 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://Go2W/meshes/sensors/VLP16_scan.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__vlp16_base_link_visual_3'>
+        <pose>0.14543 0 0.13928 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://Go2W/meshes/sensors/VLP16_base_1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__vlp16_base_link_visual_4'>
+        <pose>0.14543 0 0.13928 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://Go2W/meshes/sensors/VLP16_base_2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__vlp16_visual_5'>
+        <pose>0.14543 0 0.13928 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://Go2W/meshes/sensors/VLP16_scan.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+    </link>
+    <link name='left_wheel'>
+      <!-- base_link 기준 위치: 좌측으로 base_width/2, 약간 아래/앞 (추측입니다.) -->
+      <!-- base_width를 slotcar 플러그인에서 0.43으로 썼으니 0.215 = 0.43 / 2 -->
+      <pose relative_to='base_link'>0 0.215 0.10 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>3.0</mass>          <!-- 추측입니다. 한 축에 달린 두 휠 총 질량 가정 -->
+        <inertia>                 <!-- 추측입니다. 대충 대칭값 -->
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.02</izz>
+        </inertia>
+      </inertial>
+      <!-- 앞쪽 왼쪽 바퀴: visual -->
+      <visual name='left_wheel_front_visual'>
+        <!-- left_wheel 링크 기준으로 앞쪽으로 0.20m (추측입니다.) -->
+        <pose>0.20 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://Go2W/meshes/left_wheel.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <!-- 뒤쪽 왼쪽 바퀴: visual -->
+      <visual name='left_wheel_rear_visual'>
+        <!-- 뒤쪽으로 0.20m (추측입니다.) -->
+        <pose>-0.20 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://Go2W/meshes/left_wheel.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <!-- 앞쪽 왼쪽 바퀴: collision -->
+      <collision name='left_wheel_front_collision'>
+        <pose>0.20 0 0 0 0 0</pose>   <!-- visual과 동일 위치 -->
+        <geometry>
+          <!-- 7 inch 타이어 → 반지름 0.089m (확실) -->
+          <cylinder>
+            <length>0.08</length>     <!-- 타이어 두께 대략 값, 추측입니다. -->
+            <radius>0.089</radius>    <!-- 확실 -->
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>100000.0</kp>       <!-- 기존 1e6보다 낮춘 값, 추측입니다. -->
+              <kd>1.0</kd>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <!-- 뒤쪽 왼쪽 바퀴: collision -->
+      <collision name='left_wheel_rear_collision'>
+        <pose>-0.20 0 0 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.08</length>     <!-- 추측입니다. -->
+            <radius>0.089</radius>    <!-- 확실 -->
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>100000.0</kp>
+              <kd>1.0</kd>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <gravity>1</gravity>
+      <velocity_decay/>
+    </link>
+    <joint name='joint_tire_left' type='revolute'>
+      <parent>base_link</parent>       <!-- base_footprint 쓰는 구조면 거기로 바꿔도 됨 -->
+      <child>left_wheel</child>
+      <axis>
+        <!-- y축 회전: 0 1 0 -->
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='right_wheel'>
+      <!-- base_link 기준 위치: 좌측으로 base_width/2, 약간 아래/앞 (추측입니다.) -->
+      <!-- base_width를 slotcar 플러그인에서 0.43으로 썼으니 0.215 = 0.43 / 2 -->
+      <pose relative_to='base_link'>0 -0.215 -0.18 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>3.0</mass>          <!-- 추측입니다. 한 축에 달린 두 휠 총 질량 가정 -->
+        <inertia>                 <!-- 추측입니다. 대충 대칭값 -->
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.02</izz>
+        </inertia>
+      </inertial>
+      <!-- 앞쪽 왼쪽 바퀴: visual -->
+      <visual name='right_wheel_front_visual'>
+        <!-- right_wheel 링크 기준으로 앞쪽으로 0.20m (추측입니다.) -->
+        <pose>0.20 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://Go2W/meshes/right_wheel.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <!-- 뒤쪽 왼쪽 바퀴: visual -->
+      <visual name='right_wheel_rear_visual'>
+        <!-- 뒤쪽으로 0.20m (추측입니다.) -->
+        <pose>-0.20 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://Go2W/meshes/right_wheel.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <!-- 앞쪽 왼쪽 바퀴: collision -->
+      <collision name='right_wheel_front_collision'>
+        <pose>0.20 0 0 0 0 0</pose>   <!-- visual과 동일 위치 -->
+        <geometry>
+          <!-- 7 inch 타이어 → 반지름 0.089m (확실) -->
+          <cylinder>
+            <length>0.08</length>     <!-- 타이어 두께 대략 값, 추측입니다. -->
+            <radius>0.089</radius>    <!-- 확실 -->
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>100000.0</kp>       <!-- 기존 1e6보다 낮춘 값, 추측입니다. -->
+              <kd>1.0</kd>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <!-- 뒤쪽 왼쪽 바퀴: collision -->
+      <collision name='right_wheel_rear_collision'>
+        <pose>-0.20 0 0 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.08</length>     <!-- 추측입니다. -->
+            <radius>0.089</radius>    <!-- 확실 -->
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>100000.0</kp>
+              <kd>1.0</kd>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <gravity>1</gravity>
+      <velocity_decay/>
+    </link>
+    <joint name='joint_tire_right' type='revolute'>
+      <parent>base_link</parent>       <!-- base_footprint 쓰는 구조면 거기로 바꿔도 됨 -->
+      <child>right_wheel</child>
+      <axis>
+        <!-- y축 회전: 0 1 0 -->
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    
+    <static>0</static>
+
+  </model>
+</sdf>

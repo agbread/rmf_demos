@@ -162,9 +162,9 @@ Request URL: `http://127.0.0.1:22011/open-rmf/rmf_demos_fm/stop/?robot_name=tiny
 ```
 
 ### 4. Send Task Request
-The `start_activity` endpoint allows the fleet adapter to send task requests to a specified robot. This endpoint requires a Request Body and a `robot_name` query parameter.
+The `start_task` endpoint allows the fleet adapter to send task requests to a specified robot. This endpoint requires a Request Body and a `robot_name` query parameter.
 
-Request URL: `http://127.0.0.1:22011/open-rmf/rmf_demos_fm/start_activity/?robot_name=tinyRobot1`
+Request URL: `http://127.0.0.1:22011/open-rmf/rmf_demos_fm/start_task/?robot_name=tinyRobot1`
 ##### Request Body:
 ```json
 {
@@ -173,18 +173,10 @@ Request URL: `http://127.0.0.1:22011/open-rmf/rmf_demos_fm/start_activity/?robot
 }
 ```
 
-The fleet manager will respond by indicating what path the robot will follow while performing the activity.
-
 ##### Response Body:
 ```json
 {
   "success": true,
-  "msg": "",
-  "data": {
-    "path": {
-      "map_name": "L1",
-      "path": [ ... ]
-    }
-  }
+  "msg": ""
 }
 ```

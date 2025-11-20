@@ -71,7 +71,7 @@ The new task system allows users to construct and submit their own tasks in a mo
 - **cancel_task**
   Cancel a task by specifying its task ID:
   
-  Example: Run dispatch a `patrol` task to the newly launched `office_world`.
+  Example: Run dispatch a `patrol` task to the newly launced `office_world`.
   ```
   ros2 run rmf_demos_tasks dispatch_patrol -p coe lounge --use_sim_time
   ```
@@ -79,19 +79,6 @@ The new task system allows users to construct and submit their own tasks in a mo
   Then try cancel the submitted task with the id.
   ```bash
   ros2 run rmf_demos_tasks cancel_task -id patrol.dispatch-0
-  ```
-
-  **cancel_robot_task**
-  Cancel a task that is currently being executed on a specific robot
-
-  Example: Run dispatch a `patrol` task to the newly launched `office_world`.
-  ```
-  ros2 run rmf_demos_tasks dispatch_go_to_place -p pantry -F tinyRobot -R tinyRobot2 --use_sim_time
-  ```
-
-  Then try cancel the submitted task with the id.
-  ```bash
-  ros2 run rmf_demos_tasks cancel_robot_task -F tinyRobot -R tinyRobot2
   ```
 
 ## Additional Scripts
@@ -116,12 +103,6 @@ The new task system allows users to construct and submit their own tasks in a mo
   Example in office world:
   ```
   ros2 run rmf_demos_tasks  dispatch_go_to_place -p lounge -o 105 --use_sim_time
-  ```
-
-- **wait_for_task_complete**
-  This is a tool meant only for creating test scenarios. Essentially it blocks until a specified robot is free of any tasks. This allows us to do integration tests. Example in office world:
-  ```
-  ros2 run rmf_demos_tasks wait_for_task_complete -F tinyRobot -R tinyRobot1
   ```
 
 ## Quality Declaration

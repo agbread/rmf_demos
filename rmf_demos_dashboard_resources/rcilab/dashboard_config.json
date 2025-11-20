@@ -1,0 +1,36 @@
+{
+  "world_name" : "rcilab World",  
+  "valid_task": ["Loop", "Clean","Delivery"],
+  "task": {
+    "Delivery": {
+      "option": {
+        "coke": {
+          "pickup_place_name": "restaurant",
+          "pickup_dispenser": "coke_dispenser",
+          "dropoff_place_name": "desk",
+          "dropoff_ingestor": "coke_ingestor"
+        }
+      }
+    },
+    "Loop": {
+      "places": [
+        "restaurant",
+        "desk",
+        "loop1",
+        "loop2",
+        "cleanerbot_charger1",
+        "deliverybot_charger1",
+        "tinybot_charger1"
+      ]
+    },
+    "Clean": {
+       "option": ["clean_RCI"]
+    },
+    "Station": {
+    },
+    "Patrol": {
+    },
+    "Charging": {
+    }
+  }
+}
