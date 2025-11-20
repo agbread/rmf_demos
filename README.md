@@ -63,7 +63,13 @@ cd ~/rmf_ws/src
 git clone https://github.com/agbread/rmf_demos.git
 ```
 
-### 3. Build and source the workspace
+### 3. Install dependencies for rmf_demos(recommended)
+```bash
+cd ~/rmf_ws
+rosdep install --from-paths src --ignore-src -r -y
+```
+
+### 4. Build and source the workspace
 ```bash
 cd ~/rmf_ws
 colcon build
