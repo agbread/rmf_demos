@@ -23,7 +23,7 @@ These demos were built and tested on
 
 * [ROS 2 - Humble](https://docs.ros.org/en/humble/Releases/Release-Humble-Hawksbill.html)
 
-* [Gazebo Classic 11](http://gazebosim.org/tutorials?tut=install_ubuntu&ver=11)
+* [Gazebo Classic 11](https://classic.gazebosim.org/tutorials?tut=install_ubuntu)
 > Note: RMF is fully supported on ROS 2 Foxy as well
 
 ## Installation
