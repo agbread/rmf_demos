@@ -23,16 +23,48 @@ These demos were built and tested on
 
 * [ROS 2 - Humble](https://docs.ros.org/en/humble/Releases/Release-Humble-Hawksbill.html)
 
-* [Gazebo Fortress](https://gazebosim.org/docs/fortress)
+* [Gazebo Classic 11](http://gazebosim.org/tutorials?tut=install_ubuntu&ver=11)
 > Note: RMF is fully supported on ROS 2 Foxy as well
 
 ## Installation
-Instructions can be found [here](https://github.com/open-rmf/rmf).
 
+Official installation and background information for Open-RMF can be found [here](https://github.com/open-rmf/rmf).
+
+This fork assumes the following environment:
+
+- **Ubuntu 22.04**
+- **ROS 2 Humble**
+- **Gazebo Classic** (e.g., Gazebo 11)
+- Open-RMF installed from **binary packages** on Humble
+
+### 1. Install RMF binary packages (Humble)
+
+If you have not installed Open-RMF on Humble yet:
+
+```bash
+sudo apt update
+sudo apt install ros-humble-rmf-dev
+```
+a
+### 2. Create a workspace and clone this repository
 ```bash
 mkdir -p ~/rmf_ws/src
 cd ~/rmf_ws/src
-git clone https://github.com/agbread/rmf_demos
+git clone https://github.com/agbread/rmf_demos.git
+```
+
+### 3. Install dependencies with rosdep
+```bash
+cd ~/rmf_ws
+rosdep install --from-paths src --ignore-src -r -y
+```
+
+### 4. Build and source the workspace
+
+```bash
+cd ~/rmf_ws
+colcon build
+source install/setup.bash
 ```
  
 ## FAQ
