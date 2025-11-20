@@ -29,6 +29,12 @@ These demos were built and tested on
 ## Installation
 Instructions can be found [here](https://github.com/open-rmf/rmf).
 
+```bash
+mkdir -p ~/rmf_ws/src
+cd ~/rmf_ws/src
+git clone https://github.com/agbread/rmf_demos
+```
+ 
 ## FAQ
 Answers to frequently asked questions can be found [here](docs/faq.md).
 
