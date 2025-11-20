@@ -40,12 +40,22 @@ This fork assumes the following environment:
 ### 1. Install RMF binary packages (Humble)
 
 If you have not installed Open-RMF on Humble yet:
-
+```bash
+sudo apt update && sudo apt install ros-dev-tools -y
+```
+```bash
+sudo rosdep init # run if first time using rosdep.
+rosdep update
+```
+```bash
+colcon mixin add default https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml
+colcon mixin update default
+```
 ```bash
 sudo apt update
 sudo apt install ros-humble-rmf-dev
 ```
-a
+
 ### 2. Create a workspace and clone this repository
 ```bash
 mkdir -p ~/rmf_ws/src
@@ -53,14 +63,7 @@ cd ~/rmf_ws/src
 git clone https://github.com/agbread/rmf_demos.git
 ```
 
-### 3. Install dependencies with rosdep
-```bash
-cd ~/rmf_ws
-rosdep install --from-paths src --ignore-src -r -y
-```
-
-### 4. Build and source the workspace
-
+### 3. Build and source the workspace
 ```bash
 cd ~/rmf_ws
 colcon build
