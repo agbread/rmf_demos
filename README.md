@@ -50,6 +50,7 @@ By specifying `server_uri`, the fleetadapter will update `rmf-web` `api-server` 
 * [Hotel World](#Hotel-World)
 * [Office World](#Office-World)
 * [Airport Terminal World](#Airport-Terminal-World)
+* [RCIlab World](#RCIlab-World)
 * [Clinic World](#Clinic-World)
 * [Campus World](#Campus-World)
 * [Manufacturing & Logistics World](#Manufacturing-&-Logistics-World)
