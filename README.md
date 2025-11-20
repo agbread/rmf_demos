@@ -8,7 +8,7 @@ For more details about Open RMF, refer to the comprehensive documentation provid
 
 This repository contains demonstrations of the above mentioned capabilities of RMF. It serves as a starting point for working and integrating with Open-RMF.
 
-[![Robotics Middleware Framework](../media/thumbnail.png?raw=true)](https://vimeo.com/405803151)
+[![Robotics Middleware Framework](rmf_demos/media/thumbnail.png?raw=true)](https://vimeo.com/405803151)
 
 #### (Click to watch video)
 
