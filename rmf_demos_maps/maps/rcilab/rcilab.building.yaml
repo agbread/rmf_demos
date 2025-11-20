@@ -150,41 +150,6 @@ levels:
       - [6, 7, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
       - [7, 8, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
       - [2, 9, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
-  L3:
-    doors:
-      - [3, 4, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, L3_door1], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, double_hinged]}]
-    drawing:
-      filename: rci_lab.png
-    elevation: 10
-    fiducials:
-      - [201.50299999999999, 726.5, F1]
-      - [201.578, 885.48000000000002, F2]
-    floors:
-      - parameters: {ceiling_scale: [3, 1], ceiling_texture: [1, blue_linoleum], indoor: [2, 0], texture_name: [1, blue_linoleum], texture_rotation: [3, 0], texture_scale: [3, 1]}
-        vertices: [2, 5, 6, 8]
-    layers:
-      {}
-    measurements:
-      - [0, 1, {distance: [3, 10]}]
-    vertices:
-      - [200.50899999999999, 202.988, 0, ""]
-      - [1003.511, 203.00200000000001, 0, ""]
-      - [202, 406, 0, ""]
-      - [202, 726.5, 0, ""]
-      - [202, 885, 0, ""]
-      - [1002, 406, 0, ""]
-      - [1002, 1206, 0, ""]
-      - [681.5, 1206, 0, ""]
-      - [202, 1206, 0, ""]
-      - [523.5, 1206, 0, ""]
-      - [603, 1293, 0, "", {lift_cabin: [1, lift_1]}]
-    walls:
-      - [3, 2, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
-      - [2, 5, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
-      - [5, 6, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
-      - [6, 7, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
-      - [4, 8, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
-      - [8, 9, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
 lifts:
   lift_1:
     depth: 2
@@ -201,12 +166,11 @@ lifts:
         width: 2
         x: 0
         y: 1
-    highest_floor: L3
+    highest_floor: L2
     initial_floor_name: L1
     level_doors:
       L1: [name]
       L2: [name]
-      L3: [name]
     lowest_floor: L1
     plugins: true
     reference_floor_name: L1
