@@ -124,6 +124,8 @@ sudo apt update && sudo apt install ros-humble-rmf-dev
 ```
 
 #### Demo Scenario
+The following GIF shows an example of a **clean** task running in the RCI Lab World:
+![RCI Lab World clean task](rmf_demos/media/rcilab_clean_task.gif)
 
 To launch the RCI Lab world and the schedule visualizer:
 
